@@ -1,8 +1,4 @@
 (function(){
-	alerta();
-	function alerta(){
-
-		
-	}
+	
 
 }());
