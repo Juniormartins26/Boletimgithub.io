@@ -16,12 +16,20 @@
 				nota3 = parseFloat(nota3.value);
 
 				media = (nota1 + nota2 + nota3 )/3;
-				if(media){alert("A sua média é "+media.toFixed(2));
-				}
-
-
-				}
+				if(media){
+					alert("A sua média é "+media.toFixed(2));
 					
+				}
+				limpar();
+
+			}
+			function limpar(){
+				nota1 = document.querySelector('#nota01').value = "";
+		  		nota2 = document.querySelector('#nota02').value = "";
+		  		nota3 = document.querySelector('#nota03').value = "";
+
+
+			}		
 
 					
 
