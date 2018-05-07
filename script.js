@@ -4,15 +4,23 @@
 		  nota1 = document.querySelector('#nota01');
 		  nota2 = document.querySelector('#nota02');
 		  nota3 = document.querySelector('#nota03');
+		  let msg = document.querySelector('#msg-modal');
 
 		  let btnLimpar = document.querySelector('#btnLimpar');
-		 let botao = document.querySelector('#btnCalcular');
+		 let botao =  document.querySelector('#btnCalcular');
 
 		 botao.addEventListener('click',mediaCal,false);
+		 	// $('#btnCalcular').click (function(){
+		 	// 	$('#modal-mensagem').modal();
+
+		 	// });
+
 			limp();
+			
 			function mediaCal(){	
 				if(nota1.value == "" || nota2.value == "" ||  nota3.value == ""){
 					alert('Preencha todos os campos!');
+
 			}else{
 				nota1 = parseFloat(nota1.value);
 				nota2 = parseFloat(nota2.value);
@@ -29,25 +37,41 @@
 			function limp(){
 				btnLimpar.addEventListener('click', function(){
 			
-					window.location.reload();
-					},false);
+					 window.location.reload();
+		 	},false);
+
+			 
+					
 			}
-				
+			 
+			
 			function valicao(){
 				if(media >= 7){
-					alert("Aluno Aprovado com a média "+media.toFixed(2));
+				
+					 $('.bd-example-modal-sm ,#modal-content').modal();
+					
+					msg.innerText=" Aluno Aprovado com a média "+media.toFixed(2);
 
 				}
 				else if(media >=5  && media <7){
-					alert("Aluno Recuperação com a média "+media.toFixed(2));
+					  $('.bd-example-modal-sm ,#modal-content').modal();
+					msg.innerText=" O aluno foi  Aprovado com a média "+media.toFixed(2);
+
+					msg.innerText=(" O aluno ficou em  Recuperação com a média "+media.toFixed(2));
 
 				}else{
-						alert("Aluno Reprovado com a média "+media.toFixed(2));
+					 $('.bd-example-modal-sm ,#modal-content').modal();
+					msg.innerText=" O aluno foi  Aprovado com a média "+media.toFixed(2);
+
+					msg.innerText=(" O aluno ficou em  Recuperação com a média "+media.toFixed(2));
+
 				}
 			}
 			
 			
-				 
-				
-	
+		
+
+			   
+			
+
 }());
