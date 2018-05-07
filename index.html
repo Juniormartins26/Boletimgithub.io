@@ -7,25 +7,26 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	
 	
 
 	<title>Boletim Escolar</title>
     
 </head>
-<body>
+<body  >
+		
 	<div class="container ">
+
 	 	<div class="row ">
 		 	<div class=" col-sm-8 col-md-8 col-lg-8    m-sm-auto m-md-auto m-lg-auto ">
 					<div class="header">
-						<h1 class="text-center font-italic font-weight-bold "  >Média boletim</h1>
+						<h1 class="text-center font-italic  font-weight-bold "  >Média boletim</h1>
 
 					</div>
 					<form name="frMedia">	
-						  <div class="form-group">
-							     			
+						  <div class="form-group">			
 																				
-							    <input  type="text" class="form-control" id="nota01" placeholder=" Informe a primeira nota"   /> 
+							    <input  type="text" class="form-control" id="nota01" placeholder= " Informe a primeira nota"   /> 
 							    
 						  </div>
 						  <div class="form-group">
@@ -37,38 +38,43 @@
 								
 							    <input type="text" class="form-control" id="nota03" placeholder="Informe a terceira nota"   /> 
 						  </div>	
-
+						  
 						  <div class="form-group">
-						  	 
-
-							<button type="button" id="btnCalcular" class="btn btn-success">Calcular</button>
-							
-							<button type="button"  id="btnLimpar" class="btn btn-dark" >Limpar</button>
-							
-							<!-- <div class="alert alert-danger ">
-						    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-						  </div>
-						  -->
-					  </div>
+						  	 	
+								<button type="button" id="btnCalcular" class="btn btn-success">Calcular</button>
+								
+								<button type="button"  id="btnLimpar" class="btn btn-dark" >Limpar</button>
+						
+					 	 </div>
 				      
-  
-					  	</form>
-					</div>
-					
-				
+				  	</form>
+
+				</div>		
 
 			</div>
-		</div>			
+			
+			<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="	mySmallModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-sm">
+				    <div class="modal-content">
+				    	<div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Resultado:</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+
+						<span id="msg-modal"></span>
+				     
+				    </div>
+				  </div>
+			</div>
+		</div>	
+
+			
 	
+		
 
-
-
-
-
-
-
-
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
 
