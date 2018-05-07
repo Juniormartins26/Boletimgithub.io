@@ -55,15 +55,11 @@
 				}
 				else if(media >=5  && media <7){
 					  $('.bd-example-modal-sm ,#modal-content').modal();
-					msg.innerText=" O aluno foi  Aprovado com a média "+media.toFixed(2);
-
 					msg.innerText=(" O aluno ficou em  Recuperação com a média "+media.toFixed(2));
 
 				}else{
 					 $('.bd-example-modal-sm ,#modal-content').modal();
-					msg.innerText=" O aluno foi  Aprovado com a média "+media.toFixed(2);
-
-					msg.innerText=(" O aluno ficou em  Recuperação com a média "+media.toFixed(2));
+					msg.innerText=(" O aluno foi reprovado com a média "+media.toFixed(2));
 
 				}
 			}
