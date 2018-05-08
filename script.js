@@ -29,7 +29,7 @@
 					nota2 = parseFloat(nota2.value);
 					nota3 = parseFloat(nota3.value);
 
-					media = (nota1 + nota2 + nota3 )/3;
+					media = (nota1 + nota2 + nota3 + nota4 )/4;
 					
 					botao.removeEventListener('click',mediaCal, true);
 						
