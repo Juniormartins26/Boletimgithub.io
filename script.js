@@ -1,6 +1,6 @@
 	(function(){
 
-			let nota1, nota2, nota3, nota4 media = 0;
+			let nota1, nota2, nota3, nota4, media = 0;
 			  nota1 = document.querySelector('#nota01');
 			  nota2 = document.querySelector('#nota02');
 			  nota3 = document.querySelector('#nota03');
