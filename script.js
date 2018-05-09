@@ -19,7 +19,7 @@
 				limp();
 				
 				function mediaCal(){	
-					if(nota1.value == "" || nota2.value == "" ||  nota3.value == ""){
+					if(nota1.value == "" || nota2.value == "" ||  nota3.value == "" || nota4.value == ""){
 
 						 $('.bd-show2-modal-sm ,modal-content').modal();
 
